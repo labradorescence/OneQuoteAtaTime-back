@@ -14,9 +14,12 @@ quote1 = Quote.create(
     category: "",
 )
 
-
-
-# The secret to getting ahead is getting started.
+q2 = Quote.create(
+    content: "The secret to getting ahead is getting started.",
+    author: "Nipsey Hussle",
+    image: "",
+    category: "",
+)
 
 # The expert in everything was once a beginner.
 
