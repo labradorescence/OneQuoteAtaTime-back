@@ -6,22 +6,34 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Quote.destroy_all
 
-quote1 = Quote.create(
-    content: "I’m about seeing long-term, seeing a vision, understanding nothing really worthwhile happens overnight, and just sticking to your script long enough to make something real happen.",
-    author: "Nipsey Hussle",
-    image: "https://scontent-lga3-1.cdninstagram.com/v/t51.2885-15/e35/106134958_268724351077186_564983321837682970_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com&_nc_cat=110&_nc_ohc=4ascYjIIK0EAX8qrqPC&oh=47a66964fc45839c29542906beb878b0&oe=5F2C19CA",
-    category: "",
-)
+5.times do
+Quote.create!([
 
-q2 = Quote.create(
-    content: "The secret to getting ahead is getting started.",
+    {content: "I’m about seeing long-term, seeing a vision, understanding nothing really worthwhile happens overnight, and just sticking to your script long enough to make something real happen.",
     author: "Nipsey Hussle",
     image: "",
-    category: "",
-)
+    category: ""},
 
-# The expert in everything was once a beginner.
+    {content: "The secret to getting ahead is getting started.",
+    author: "",
+    image: "",
+    category: ""},
+
+    {content: "The expert in everything was once a beginner.",
+    author: "",
+    image: "",
+    category: ""},
+
+    {content: "The expert in everything was once a beginner.",
+    author: "",
+    image: "",
+    category: ""}
+
+])
+
+# 
 
 # You don’t have to be great to start, but you have to start to be great. 
 
